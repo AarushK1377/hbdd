@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Maicha 🎂</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;display:flex;justify-content:center;align-items:center;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  font-family:Arial,sans-serif;padding:15px;overflow:hidden;
+}
+.card{
+  background:#fff;padding:30px;border-radius:20px;text-align:center;
+  width:100%;max-width:380px;
+  box-shadow:0 15px 30px rgba(0,0,0,.25);
+  position:relative;
+}
+h1{color:#ff5e78}
+
+/* typing */
+.type{
+  font-size:1.05em;color:#444;
+  border-right:2px solid #ff5e78;
+  white-space:nowrap;overflow:hidden;
+  width:0;animation:typing 4s steps(40,end) forwards, blink .8s infinite;
+  margin:10px auto;
+}
+
+/* cake */
+.cake{width:160px;margin:25px auto;position:relative}
+.layer{height:35px;border-radius:10px;animation:bounce 2s infinite}
+.top{background:#ffd1dc}
+.mid{background:#ff8fab;margin-top:5px}
+.bot{background:#ff5e78;margin-top:5px}
+.candle{
+  width:10px;height:28px;background:#fff;position:absolute;
+  top:-28px;left:50%;transform:translateX(-50%);
+}
+.flame{
+  width:12px;height:12px;background:orange;border-radius:50%;
+  position:absolute;top:-14px;left:-1px;animation:flicker .6s infinite;
+}
+
+/* cat */
+.cat{
+  font-size:2.5em;
+  margin-top:10px;
+  animation:wiggle 2s infinite;
+}
+
+/* floating paws */
+.paw{
+  position:absolute;font-size:1.2em;opacity:.4;
+  animation:float 6s infinite linear;
+}
+.paw:nth-child(1){left:10%;top:100%}
+.paw:nth-child(2){left:70%;top:100%;animation-delay:2s}
+.paw:nth-child(3){left:40%;top:100%;animation-delay:4s}
+
+button{
+  margin-top:20px;padding:12px 24px;border:none;border-radius:25px;
+  background:#ff5e78;color:#fff;font-size:1em;
+  width:100%;cursor:pointer;
+}
+
+@keyframes typing{to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+@keyframes bounce{50%{transform:translateY(-6px)}}
+@keyframes flicker{50%{transform:scale(1.3);opacity:.7}}
+@keyframes wiggle{50%{transform:rotate(5deg)}}
+@keyframes float{to{transform:translateY(-120vh)}}
+</style>
+</head>
+<body>
+
+<div class="paw">🐾</div>
+<div class="paw">🐾</div>
+<div class="paw">🐾</div>
+
+<div class="card">
+  <h1>Happy Birthday, Maicha 🎂🎉</h1>
+  <div class="type"> You truly make the world brighter❤️🐱
+                     <p>
+                     knowing you has made my days feel lighter<br>
+                      I’m really grateful you exist<br>
+                      🐱 I hope your day is as warm, soft, and<br>
+                   comforting as a cat finding its favorite<br>
+                        place to sit
+                      <p/> </div>
+
+  <div class="cake">
+    <div class="candle"><div class="flame"></div></div>
+    <div class="layer top"></div>
+    <div class="layer mid"></div>
+    <div class="layer bot"></div>
+  </div>
+
+  <div class="cat">🐱</div>
+
+  <button onclick="location.href='question.html'">
+    I have something to ask you 💌
+  </button>
+</div>
+</body>
+</html>

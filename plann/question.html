@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Question 💖</title>
+<style>
+body{
+  margin:0;min-height:100vh;display:flex;justify-content:center;align-items:center;
+  background:linear-gradient(135deg,#a18cd1,#fbc2eb);
+  font-family:Arial,sans-serif;padding:15px;
+}
+.box{
+  background:#fff;padding:100px;border-radius:50px;text-align:center;
+  width:100%;max-width:460px;
+}
+
+/* floating paws */
+.paw{
+  position:absolute;font-size:1.2em;opacity:.4;
+  animation:float 6s infinite linear;
+}
+.paw:nth-child(1){left:10%;top:100%}
+.paw:nth-child(2){left:70%;top:100%;animation-delay:2s}
+.paw:nth-child(3){left:40%;top:100%;animation-delay:4s}
+
+button{
+  margin-top:20px;padding:12px 24px;border:none;border-radius:25px;
+  background:#ff5e78;color:#fff;font-size:1em;
+  width:100%;cursor:pointer;
+}
+
+.type{
+  font-size:1.1em;color:#ff5e78;
+  border-right:2px solid #ff5e78;
+  white-space:nowrap;overflow:hidden;
+  width:0;animation:typing 3s steps(30,end) forwards, blink .8s infinite;
+}
+.cat{font-size:2.2em;margin:10px 0}
+button{
+  padding:12px 20px;margin:8px;border:none;border-radius:25px;
+  width:100%;font-size:1em;cursor:pointer;
+}
+.yes{background:#ff5e78;color:#fff}
+.no{background:#ddd}
+
+@keyframes typing{to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="type">Maicha,<br>
+                    you are the most beautiful human being,<br>
+                    that, i have ever seen 💕<br>
+                    I want to ask you something!<br>
+                     </div>
+  <div class="cat"> 🧛 Do you want to zing? 😉</div>
+  <button class="yes" onclick="location.href='yessss.html'">Yes 😊</button>
+  <button class="no" onclick="location.href='no.html'">No 😅</button>
+</div>
+</body>
+</html>
