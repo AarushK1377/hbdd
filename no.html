@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>It’s Okay 😊</title>
+<style>
+body{
+  margin:0;min-height:100vh;
+  display:flex;justify-content:center;align-items:center;
+  background:linear-gradient(135deg,#a1c4fd,#c2e9fb);
+  font-family:Arial,sans-serif;padding:15px;
+}
+.card{
+  background:#fff;padding:50px;border-radius:50px;
+  text-align:center;width:100%;max-width:360px;
+}
+.type{
+  color:#4a6fa5;font-size:1.05em;
+  border-right:2px solid #4a6fa5;
+  white-space:nowrap;overflow:hidden;
+  width:0;
+  animation:typing 3s steps(40,end) forwards, blink .8s infinite;
+}
+.cat{
+  font-size:3em;
+  margin-top:15px;
+  animation:sigh 2s infinite;
+}
+
+@keyframes typing{to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+@keyframes sigh{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(5px)}
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="type">
+    That’s okay, Maicha. I respect your feelings.<br>
+     Incase you change your mind,<br>
+       you can go back😅<br>
+      otherwise, you may continue 😀
+
+
+  </div>
+  <div class="cat">😿💙🐾</div>
+
+   <button onclick="location.href='missing.html'">
+    One last thing 💌
+  <button/>
+
+  <button onclick="location.href='question.html'">
+    Go back!
+   <button/>
+
+  <div/>
+</body>
+</html>

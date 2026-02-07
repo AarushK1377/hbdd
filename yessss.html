@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You Said Yes 💕</title>
+<style>
+body{
+  margin:0;min-height:100vh;
+  display:flex;justify-content:center;align-items:center;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  font-family:Arial,sans-serif;padding:15px;
+}
+.card{
+  background:#fff;padding:30px;border-radius:20px;
+  text-align:center;width:100%;max-width:360px;
+}
+.type{
+  color:#ff4d6d;font-size:1.1em;
+  border-right:2px solid #ff4d6d;
+  white-space:nowrap;overflow:hidden;
+  width:0;
+  animation:typing 3s steps(30,end) forwards, blink .8s infinite;
+}
+.cat{
+  font-size:3em;
+  margin:15px 0;
+  animation:jump 1s infinite;
+}
+button{
+  margin-top:15px;padding:12px 24px;border:none;border-radius:25px;
+  background:#ff5e78;color:#fff;width:100%;cursor:pointer;
+}
+
+@keyframes typing{to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+@keyframes jump{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="type"> Really?! I cant believe you said yes 🥰</div>
+  <div class="cat">😸💖🐾</div>
+  <button onclick="location.href='missing.html'">
+    One last thing 💌
+  </button>
+</div>
+</body>
+</html>
